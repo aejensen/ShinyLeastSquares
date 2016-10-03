@@ -20,15 +20,13 @@ shinyUI(pageWithSidebar(
                 max = 3,
                 step = 0.05),
     
-    br(),
-      
     checkboxInput(inputId = "sse",
                   label = strong("Show sum of squared residuals"),
                   value = FALSE)
   ),
   
   mainPanel(
-      plotOutput(outputId = "main_plot", height="600px", width="800px")
+      plotOutput(outputId = "main_plot", height="600px", width="1200px")
   
 ))
 )
