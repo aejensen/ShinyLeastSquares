@@ -21,12 +21,7 @@ shinyUI(pageWithSidebar(
                 step = 0.05),
     
     br(),
-  
-    radioButtons("outputtype", "Output type:",
-                 list("Points" = "points",
-                      "Residuals" = "residuals",
-                      "Squared residuals" = "sqresiduals")),
-    
+      
     checkboxInput(inputId = "sse",
                   label = strong("Show sum of squared residuals"),
                   value = FALSE)
