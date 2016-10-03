@@ -6,5 +6,5 @@ To run directly from R use
 
 ```{r}
 library(shiny)
-runGitHub('ShinyLeastSquares', 'ekstroem')
+runGitHub('ShinyLeastSquares', 'aejensen')
 ```
