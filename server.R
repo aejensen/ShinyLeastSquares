@@ -19,7 +19,7 @@ shinyServer(function(input, output) {
     segments(x, input$alpha+input$beta*x, x, y)
           
 	sse <- sum((y - (input$alpha+input$beta*x))**2)
-    bp <- barplot(sse, col="#0000BB66", ylim=c(0, 15), main="Residualkvadratsum")
+    bp <- barplot(sse, col="#0000BB66", ylim=c(0, 15), main="RSS")
     text(bp, 1, sse)
     
   })
